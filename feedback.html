@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awakenings Connect - Community Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="screen-title">Community Feedback</h1>
+        <a href="home.html" class="back-link">←</a>
+        
+        <div style="padding: 20px;">
+            <p>Share your thoughts, suggestions, or report issues to help improve Awakenings Connect.</p>
+            
+            <div class="form-group">
+                <label for="feedbackType">Feedback Type</label>
+                <select id="feedbackType" class="form-control" onchange="if(this.value === 'rating') window.location.href='app-rating.html';">
+                    <option value="" disabled selected>Select feedback type</option>
+                    <option value="report">Report an Issue</option>
+                    <option value="suggestion">Suggestion</option>
+                    <option value="request">Feature Request</option>
+                    <option value="content">Content Idea</option>
+                    <option value="general">General Feedback</option>
+                    <option value="rating">App Experience Rating</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div id="standardFeedback">
+                <div class="form-group">
+                    <label for="feedbackSubject">Subject</label>
+                    <input type="text" id="feedbackSubject" class="form-control" placeholder="Brief description">
+                </div>
+                
+                <div class="form-group">
+                    <label for="feedbackDetails">Details</label>
+                    <textarea id="feedbackDetails" class="form-control" rows="6" placeholder="Provide details about your feedback, suggestion, or the issue you're reporting..."></textarea>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>
+                    <input type="checkbox"> Allow admin to contact me about this feedback
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <a href="feedback-success.html" class="btn btn-primary">Submit Feedback</a>
+            </div>
+        </div>
+        
+        <div style="padding: 0 20px; margin-top: 20px;">
+            <h3>Previous Submissions</h3>
+            
+            <div class="list-item">
+                <div>
+                    <strong>Feature Request: Audio Meditation Library</strong>
+                    <p style="margin: 5px 0; color: #666;">Submitted: May 10, 2025</p>
+                    <p style="margin: 5px 0; color: #008000;">Status: Under Review</p>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div>
+                    <strong>Bug Report: Notification Sound Issue</strong>
+                    <p style="margin: 5px 0; color: #666;">Submitted: May 3, 2025</p>
+                    <p style="margin: 5px 0; color: #0000ff;">Status: In Progress</p>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div>
+                    <strong>General Feedback: App Usability</strong>
+                    <p style="margin: 5px 0; color: #666;">Submitted: April 28, 2025</p>
+                    <p style="margin: 5px 0; color: #008000;">Status: Resolved</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-nav">
+            <a href="home.html" title="Connect">💬</a>
+            <a href="profile.html" title="Profile">👤</a>
+            <a href="feedback.html" title="Feedback">📝</a>
+        </div>
+        
+        <div class="annotation" style="margin-bottom: 60px;">
+            Note: This screen allows community members to provide various types of feedback to administrators, including bug reports, feature requests, and general suggestions. Users can also view the status of their previous submissions.
+        </div>
+    </div>
+</body>
+</html>

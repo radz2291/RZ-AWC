@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awakenings Connect - Group Settings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="screen-title">Manage Group</h1>
+        <a href="chat.html" class="back-link">←</a>
+        
+        <div style="text-align: center; padding: 20px 0;">
+            <div class="profile-picture">
+                Group Image<br>
+                (Tap to edit)
+            </div>
+            
+            <h2 style="margin: 10px 0;">Weekly Meditation Group</h2>
+        </div>
+        
+        <div style="padding: 0 20px;">
+            <h3>Group Settings</h3>
+            
+            <div class="form-group">
+                <label for="groupName">Group Name</label>
+                <input type="text" id="groupName" class="form-control" value="Weekly Meditation Group">
+            </div>
+            
+            <div class="form-group">
+                <label for="groupDescription">Description</label>
+                <textarea id="groupDescription" class="form-control" rows="3">A group for discussing and sharing insights about our weekly meditation sessions.</textarea>
+            </div>
+        </div>
+        
+        <div class="settings-section">
+            <h3 style="padding: 0 20px;">Manage Group Members</h3>
+            
+            <table class="admin-table">
+                <tr>
+                    <th>Member</th>
+                    <th>Role</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Jane Smith (You)</td>
+                    <td>Admin</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Member</td>
+                    <td><a href="#" style="color: #000;">Remove</a></td>
+                </tr>
+                <tr>
+                    <td>Sarah Johnson</td>
+                    <td>Member</td>
+                    <td><a href="#" style="color: #000;">Remove</a></td>
+                </tr>
+                <tr>
+                    <td>Mike Brown</td>
+                    <td>Member</td>
+                    <td><a href="#" style="color: #000;">Remove</a></td>
+                </tr>
+            </table>
+            
+            <div style="padding: 20px;">
+                <a href="add-members.html" class="btn">Add New Members</a>
+            </div>
+        </div>
+        
+        <div style="padding: 20px;">
+            <a href="#" class="btn">Save Changes</a>
+            <a href="#" class="btn" style="background-color: #ffdddd; margin-top: 20px;">Delete Group</a>
+        </div>
+        
+        <div class="annotation" style="margin-bottom: 20px;">
+            Note: This admin-only screen allows for managing group settings, members, and permissions. The delete group action would require confirmation in the actual implementation.
+        </div>
+    </div>
+</body>
+</html>

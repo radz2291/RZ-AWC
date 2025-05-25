@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awakenings Connect - Feedback Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .feedback-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        
+        .feedback-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .feedback-type {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            background-color: #e0e0e0;
+        }
+        
+        .feedback-type.feature {
+            background-color: #d1e7dd;
+            color: #0f5132;
+        }
+        
+        .feedback-type.bug {
+            background-color: #f8d7da;
+            color: #842029;
+        }
+        
+        .feedback-type.suggestion {
+            background-color: #cfe2ff;
+            color: #084298;
+        }
+        
+        .feedback-type.rating {
+            background-color: #fff3cd;
+            color: #664d03;
+        }
+        
+        .feedback-meta {
+            color: #666;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        
+        .admin-tab {
+            display: flex;
+            border-bottom: 1px solid #000;
+            margin-bottom: 15px;
+        }
+        
+        .tab-item {
+            padding: 10px 15px;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+        }
+        
+        .tab-item.active {
+            border-bottom: 3px solid #000;
+            font-weight: bold;
+        }
+        
+        .status-select {
+            padding: 3px 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="screen-title">Feedback Management</h1>
+        <a href="admin-dashboard.html" class="back-link">←</a>
+        
+        <div style="padding: 15px;">
+            <div class="admin-tab">
+                <div class="tab-item active">All Feedback</div>
+                <div class="tab-item">Pending</div>
+                <div class="tab-item">In Progress</div>
+                <div class="tab-item">Resolved</div>
+                <div class="tab-item">Ratings</div>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search feedback...">
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; margin: 10px 0;">
+                    <div>
+                        <select class="form-control" style="width: auto; display: inline-block;">
+                            <option>Filter: All Types</option>
+                            <option>Feature Requests</option>
+                            <option>Bug Reports</option>
+                            <option>Suggestions</option>
+                            <option>Ratings</option>
+                        </select>
+                    </div>
+                    <select class="form-control" style="width: auto; display: inline-block;">
+                        <option>Sort: Newest First</option>
+                        <option>Oldest First</option>
+                        <option>Highest Priority</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="feedback-card">
+                <div class="feedback-header">
+                    <h3 style="margin: 0;">Audio Meditation Library</h3>
+                    <span class="feedback-type feature">Feature Request</span>
+                </div>
+                <div class="feedback-meta">
+                    From: John Smith • May 10, 2025 • ID: FB-2025-05-10-0039
+                </div>
+                <p>It would be great to have a library of guided meditations that users can access directly in the app. This would enhance our community experience during the weekly meditation sessions.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
+                    <select class="status-select">
+                        <option>Set Priority</option>
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option selected>High</option>
+                        <option>Critical</option>
+                    </select>
+                    <select class="status-select">
+                        <option>Update Status</option>
+                        <option>Pending</option>
+                        <option selected>Under Review</option>
+                        <option>In Progress</option>
+                        <option>Completed</option>
+                        <option>Declined</option>
+                    </select>
+                    <a href="feedback-details.html" class="btn" style="padding: 5px 10px;">View Details</a>
+                </div>
+            </div>
+            
+            <div class="feedback-card">
+                <div class="feedback-header">
+                    <h3 style="margin: 0;">Notification Sound Issue</h3>
+                    <span class="feedback-type bug">Bug Report</span>
+                </div>
+                <div class="feedback-meta">
+                    From: Sarah Johnson • May 3, 2025 • ID: FB-2025-05-03-0027
+                </div>
+                <p>Notification sounds aren't working on Android devices when the app is in the background. I have checked my phone settings and notifications are enabled.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
+                    <select class="status-select">
+                        <option>Set Priority</option>
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option selected>High</option>
+                        <option>Critical</option>
+                    </select>
+                    <select class="status-select">
+                        <option>Update Status</option>
+                        <option>Pending</option>
+                        <option>Under Review</option>
+                        <option selected>In Progress</option>
+                        <option>Completed</option>
+                        <option>Declined</option>
+                    </select>
+                    <a href="feedback-details.html" class="btn" style="padding: 5px 10px;">View Details</a>
+                </div>
+            </div>
+            
+            <div class="feedback-card">
+                <div class="feedback-header">
+                    <h3 style="margin: 0;">App Usability Feedback</h3>
+                    <span class="feedback-type suggestion">Suggestion</span>
+                </div>
+                <div class="feedback-meta">
+                    From: Emily Davis • April 28, 2025 • ID: FB-2025-04-28-0021
+                </div>
+                <p>The app is great overall, but I think the navigation could be improved. It takes too many taps to get to frequently used features like group chats.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
+                    <select class="status-select">
+                        <option>Set Priority</option>
+                        <option>Low</option>
+                        <option selected>Medium</option>
+                        <option>High</option>
+                        <option>Critical</option>
+                    </select>
+                    <select class="status-select">
+                        <option>Update Status</option>
+                        <option>Pending</option>
+                        <option>Under Review</option>
+                        <option>In Progress</option>
+                        <option selected>Completed</option>
+                        <option>Declined</option>
+                    </select>
+                    <a href="feedback-details.html" class="btn" style="padding: 5px 10px;">View Details</a>
+                </div>
+            </div>
+            
+            <div class="feedback-card">
+                <div class="feedback-header">
+                    <h3 style="margin: 0;">Overall App Experience</h3>
+                    <span class="feedback-type rating">Rating</span>
+                </div>
+                <div class="feedback-meta">
+                    From: David Wilson • April 25, 2025 • ID: FB-2025-04-25-0019
+                </div>
+                <div style="margin: 10px 0;">
+                    <p><strong>User Interface:</strong> ★★★★☆ (4/5)</p>
+                    <p><strong>Message Delivery:</strong> ★★★★★ (5/5)</p>
+                    <p><strong>Group Functionality:</strong> ★★★☆☆ (3/5)</p>
+                    <p><strong>Spiritual Content:</strong> ★★★★★ (5/5)</p>
+                    <p><strong>Community Support:</strong> ★★★★☆ (4/5)</p>
+                    <p><strong>Overall Experience:</strong> ★★★★☆ (4/5)</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
+                    <select class="status-select" disabled>
+                        <option>Set Priority</option>
+                        <option selected>N/A</option>
+                    </select>
+                    <select class="status-select">
+                        <option>Update Status</option>
+                        <option>Pending</option>
+                        <option selected>Reviewed</option>
+                        <option>Archived</option>
+                    </select>
+                    <a href="feedback-details.html" class="btn" style="padding: 5px 10px;">View Details</a>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin: 20px 0;">
+                <span style="margin: 0 10px;">« Previous</span>
+                <span style="margin: 0 5px; font-weight: bold;">1</span>
+                <span style="margin: 0 5px;">2</span>
+                <span style="margin: 0 5px;">3</span>
+                <span style="margin: 0 10px;">Next »</span>
+            </div>
+        </div>
+        
+        <div class="annotation" style="margin: 20px;">
+            Note: This screen allows admins to view, filter, and manage user feedback. Admins can prioritize feedback, update status, and drill down into detailed views of each submission.
+        </div>
+    </div>
+</body>
+</html>

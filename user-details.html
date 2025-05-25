@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awakenings Connect - User Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="screen-title">User Management</h1>
+        <a href="admin-dashboard.html" class="back-link">←</a>
+        
+        <div style="padding: 20px;">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <div class="profile-picture">
+                    User Photo
+                </div>
+                <h2 style="margin: 10px 0;">Sarah Johnson</h2>
+                <p style="margin: 5px 0; color: #666;">@sarahjohnson</p>
+                <span style="display: inline-block; padding: 5px 10px; background-color: #d4edda; color: #155724; border-radius: 20px; font-size: 14px;">Active</span>
+            </div>
+            
+            <div class="form-group">
+                <label for="userName">Full Name</label>
+                <input type="text" id="userName" class="form-control" value="Sarah Johnson">
+            </div>
+            
+            <div class="form-group">
+                <label for="userEmail">Email</label>
+                <input type="email" id="userEmail" class="form-control" value="sarah.johnson@example.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="userRole">Role</label>
+                <select id="userRole" class="form-control">
+                    <option>User</option>
+                    <option>Admin</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="userStatus">Status</label>
+                <select id="userStatus" class="form-control">
+                    <option selected>Active</option>
+                    <option>Pending</option>
+                    <option>Inactive</option>
+                    <option>Suspended</option>
+                </select>
+            </div>
+            
+            <div style="margin-top: 30px;">
+                <h3>User Stats</h3>
+                <div style="display: flex; justify-content: space-between; text-align: center; margin-top: 15px;">
+                    <div style="flex: 1;">
+                        <div style="font-size: 24px; font-weight: bold;">12</div>
+                        <div style="color: #666; font-size: 14px;">Groups</div>
+                    </div>
+                    <div style="flex: 1;">
+                        <div style="font-size: 24px; font-weight: bold;">256</div>
+                        <div style="color: #666; font-size: 14px;">Messages</div>
+                    </div>
+                    <div style="flex: 1;">
+                        <div style="font-size: 24px; font-weight: bold;">Feb 23</div>
+                        <div style="color: #666; font-size: 14px;">Joined</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 30px;">
+                <h3>Groups</h3>
+                <table class="admin-table">
+                    <tr>
+                        <th>Group Name</th>
+                        <th>Role</th>
+                    </tr>
+                    <tr>
+                        <td>Weekly Meditation Group</td>
+                        <td>Member</td>
+                    </tr>
+                    <tr>
+                        <td>Spiritual Book Club</td>
+                        <td>Admin</td>
+                    </tr>
+                    <tr>
+                        <td>Morning Ritual Group</td>
+                        <td>Member</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div style="margin-top: 30px;">
+                <h3>Recent Activity</h3>
+                <div class="list-item">
+                    <strong>Posted in Weekly Meditation Group</strong>
+                    <p style="margin: 5px 0; color: #666;">3 hours ago</p>
+                </div>
+                <div class="list-item">
+                    <strong>Created new group: Spiritual Book Club</strong>
+                    <p style="margin: 5px 0; color: #666;">2 days ago</p>
+                </div>
+                <div class="list-item">
+                    <strong>Updated profile information</strong>
+                    <p style="margin: 5px 0; color: #666;">1 week ago</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 30px;">
+                <div style="display: flex; gap: 10px;">
+                    <a href="#" class="btn" style="flex: 1;">Reset Password</a>
+                    <a href="#" class="btn" style="flex: 1;">Send Message</a>
+                </div>
+                <a href="#" class="btn" style="background-color: #ffdddd; margin-top: 10px;">Suspend Account</a>
+            </div>
+        </div>
+        
+        <div class="annotation" style="margin: 20px;">
+            Note: This screen allows admins to view and edit user details, change user roles and status, see user statistics, and perform account management actions.
+        </div>
+    </div>
+</body>
+</html>

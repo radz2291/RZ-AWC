@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awakenings Connect - Create Group</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="screen-title">Create New Group</h1>
+        <a href="home.html" class="back-link">←</a>
+        
+        <div style="text-align: center; padding: 20px 0;">
+            <div class="profile-picture">
+                Group Image<br>
+                (Tap to upload)
+            </div>
+        </div>
+        
+        <div style="padding: 0 20px;">
+            <div class="form-group">
+                <label for="groupName">Group Name</label>
+                <input type="text" id="groupName" class="form-control" placeholder="Enter group name">
+            </div>
+            
+            <div class="form-group">
+                <label for="groupDescription">Description</label>
+                <textarea id="groupDescription" class="form-control" rows="3" placeholder="Describe the purpose of this group"></textarea>
+            </div>
+        </div>
+        
+        <div class="settings-section">
+            <h3 style="padding: 0 20px;">Add Members</h3>
+            
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search for users to add">
+            </div>
+            
+            <div class="list-item">
+                <input type="checkbox" id="user1">
+                <label for="user1">John Doe</label>
+            </div>
+            
+            <div class="list-item">
+                <input type="checkbox" id="user2">
+                <label for="user2">Sarah Johnson</label>
+            </div>
+            
+            <div class="list-item">
+                <input type="checkbox" id="user3">
+                <label for="user3">Mike Brown</label>
+            </div>
+            
+            <div class="list-item">
+                <input type="checkbox" id="user4">
+                <label for="user4">Emily Davis</label>
+            </div>
+        </div>
+        
+        <div style="padding: 20px;">
+            <a href="home.html" class="btn btn-primary">Create Group</a>
+        </div>
+        
+        <div class="annotation" style="margin-bottom: 20px;">
+            Note: This screen allows admins to create a new group by providing a name, description, and adding members. The group creator automatically becomes an admin.
+        </div>
+    </div>
+</body>
+</html>
