@@ -1,0 +1,152 @@
+### **Key Features Overview for Awakenings Connect**
+
+#### **1. Authentication**
+
+* **Sign Up**:
+
+  * Users can create a new account by entering an email, password, and confirming the password.
+  * Email verification to activate the account.
+* **Sign In**:
+
+  * Users log in with their email and password.
+  * Option for **Forgot Password** to recover the account.
+* **Security**: Passwords should be stored securely, and two-factor authentication can be an additional option.
+
+---
+
+#### **2. User Settings**
+
+* **Notification Preferences**:
+
+  * Customize alerts for new messages, mentions, event reminders, and other notifications.
+* **Profile Management**:
+
+  * Users can update their profile picture, name, and bio.
+  * Change their email address and password.
+* **Privacy Settings**:
+
+  * Control who can view the profile and who can send direct messages.
+  * Option to keep the profile public or private.
+
+---
+
+#### **3. Group Management (Admin-Only)**
+
+* **Group Creation**:
+
+  * Admins can create new groups by providing a group name, description, and profile picture.
+  * Add members to the group and manage their roles (admin/member).
+* **Edit Group Information**:
+
+  * Admins can edit the group name, description, or image.
+* **Manage Members**:
+
+  * Admins can remove users or assign admin rights to other members.
+* **Delete Group**:
+
+  * Admins can delete the group (with confirmation).
+
+---
+
+#### **4. Conversation Types**
+
+* **One-on-One Chats**:
+
+  * Direct messaging between users for private conversations.
+* **Group Chats**:
+
+  * Multi-user conversations where messages can be sent to all members of the group.
+  * Option to pin important messages, reply to specific messages, or react with emojis.
+
+---
+
+#### **5. Message Features**
+
+* **Text Messages**:
+
+  * Basic text messaging for sending and receiving communication.
+* **Image & Video Sharing**:
+
+  * Support for sharing media such as images, videos, and links.
+* **Voice Messages**:
+
+  * Option for users to send voice recordings within chats.
+* **Emoji Reactions**:
+
+  * Users can react to messages with emojis to express feelings or responses.
+* **Mentions (@username)**:
+
+  * Users can mention specific members by typing "@" followed by their username.
+* **Message Threading**:
+
+  * Users can reply directly to specific messages to create conversation threads.
+* **Pinned Messages**:
+
+  * Important messages can be pinned for quick reference, such as announcements or reminders.
+* **Message Status**:
+
+  * Display "sent", "delivered", and "read" statuses for messages to track engagement.
+
+---
+
+#### **6. Notifications**
+
+* **Push Notifications**:
+
+  * Alerts for new messages, mentions, and events, delivered to the user's mobile device.
+* **Browser Notifications**:
+
+  * Notifications for users accessing the app via a browser.
+* **OneSignal Integration**:
+
+  * A third-party service (OneSignal) for managing and sending notifications across devices.
+
+---
+
+#### **7. User Profiles**
+
+* **Profile Picture**:
+
+  * Users can upload and update their profile image.
+* **Status Message**:
+
+  * Users can set a custom status message to inform others about their current availability or mood.
+* **Reporting and Blocking**:
+
+  * Users can report inappropriate content or block other users.
+
+---
+
+#### **8. Search Functionality**
+
+* **Search Messages**:
+
+  * Ability to search within chats and messages for specific content or users.
+* **Search Contacts**:
+
+  * Ability to search for other users by name or username to initiate conversations.
+
+---
+
+#### **9. Security**
+
+* **End-to-End Encryption**:
+
+  * Messages between users and within groups are encrypted to ensure privacy and security.
+* **Data Privacy**:
+
+  * Personal information is kept secure, with measures taken to prevent unauthorized access.
+* **Role-Based Access Control**:
+
+  * Admins have different permissions than regular users to manage groups and members.
+
+---
+
+#### **10. Platform Support**
+
+* **Mobile App Support**:
+
+  * The app will be available for both **iOS** and **Android** devices.
+* **Web Browser Version**:
+
+  * Users can access the app via a web browser version for desktops and laptops.
